@@ -1,0 +1,15 @@
+meta {
+  name: get user info
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/auth/users/me/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: JWT {{jwt}}
+}
